@@ -28,13 +28,11 @@ hr {
 .nav{
     color: var(--primary-color);
     display: flex;
-   
     justify-content: space-between;
     align-items: center;
-   
     padding: 20px;
 }
-.brand-name .navbar-toggler.shopping-card{
+.navbar-toggler , .shoping-card{
     display: none;
 }
 .brand-name h1 {
@@ -96,7 +94,9 @@ hr {
 .online-shopping {
     display: flex;
     justify-content: space-evenly;
+    gap: 5px;
     margin: 20px 0px;
+    
 }
 
 /* product part style */
@@ -169,7 +169,7 @@ Featured-product
 }
 .featured-disc{
     width: 60%;
-    margin: 20px 1000px;
+    /* margin: 20px 10px; */
     padding: 20px;
 }
 .featured-disc h1{
@@ -184,13 +184,29 @@ Featured-product
     border: none;
     border-radius: 8px;
 }
+/* Footer section style  */
+.footer{
+    background-color: rgb(25, 25, 106);
+    text-align: center;
+    padding: 80px 0px;
+    color: white;
+}
+.footer p{
+    font-size: 18px;
+  margin-top: 10px;
+}
+.others-link{
+    margin-top: 15px;
+}
+.others-link i{
+    margin-left: 15px;
+}
 
 
 /* risponsive section  */
 @media screen and (max-width:576px) {
     .container{
         width: 90%;
-     
         padding: 0px;
     }
     .nav , .header-banner , .featured-product{
@@ -202,14 +218,15 @@ Featured-product
         margin: 20px 0px;
         display: flex;
         justify-content: space-evenly;
-        gap: 60px;
+        gap: 50px;
     }
     .brand-name h1{
         font-size: 25px;
     }
-    .brand-name .navbar-toggler.shopping-card{
+    .navbar-toggler , .shoping-card{
         display: block;
     }
+    
     .navbar{
         display: none;
     }
@@ -233,8 +250,8 @@ Featured-product
     }
     .online-shopping img{
         height: 40px;
-        width: 100px;
-        margin-bottom: 60px;
+        width: 90px;
+        margin: 10px 0px;
     }
     .product-container{
         padding: 0%;
