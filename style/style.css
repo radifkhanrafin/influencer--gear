@@ -1,0 +1,260 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --primary-color: rgb(60, 57, 57);
+}
+
+hr {
+    margin: 25px 0px;
+    border: 2px 0px 0px 0px solid gray;
+    border-bottom: none;
+}
+
+.container {
+   
+    font-family: 'Roboto', sans-serif;
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 15px;
+
+}
+
+/* ----------------------Nav style-------------- */
+.nav{
+    color: var(--primary-color);
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 20px;
+}
+.brand-name .navbar-toggler.shopping-card{
+    display: none;
+}
+.brand-name h1 {
+    font-size: 35px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    color: var(--primary-color);
+    font-size: 21px;
+    text-decoration: none;
+}
+
+/*----------------- Header banner ----------------- */
+.header-banner {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 30px; */
+
+}
+
+.banner-disc {
+    width: 50%;
+    font-weight: bold;
+}
+
+.banner-heading {
+    font-size: 3.5rem;
+    margin: 20px 0px;
+}
+
+.banner-btn {
+    padding: 10px 35px;
+    background-color: rgb(247, 80, 163);
+    font-size: 22px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+.banner-img {}
+
+/* all shopping logo is here */
+.online-shopping {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+
+/* product part style */
+.product-section {
+    padding: 20px;
+}
+
+.product-section h1 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    padding: 20px 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    box-shadow: 2px 2px 30px gray;
+    border-radius: 5px;
+}
+
+.card img {
+    padding: 5px 0px;
+}
+
+.product-name {
+    margin: 10px 0px;
+}
+
+.card-disc {
+    display: flex;
+}
+
+.card p {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 5px 0px;
+}
+
+.product-rating {
+    display: flex;
+    gap: 20px;
+}
+
+.product-rating .star-icon {
+    color: gold;
+}
+.see-more{
+    text-align: end;
+    font-size: 20px;
+    color: black;
+    margin-right: 65px;
+}
+/* -----------
+Featured-product
+----------- */
+.featured-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-image{
+    width: 30%;
+}
+.featured-disc{
+    width: 60%;
+    margin: 20px 1000px;
+    padding: 20px;
+}
+.featured-disc h1{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.featured-disc button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 8px;
+}
+
+
+/* risponsive section  */
+@media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+     
+        padding: 0px;
+    }
+    .nav , .header-banner , .featured-product{
+        padding: 2px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .brand-name{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 60px;
+    }
+    .brand-name h1{
+        font-size: 25px;
+    }
+    .brand-name .navbar-toggler.shopping-card{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .banner-disc {
+        width: 100%;
+        text-align: center;
+       
+    }
+    .banner-disc h1{
+       
+        font-size: 35px;
+    }
+    
+    .banner-btn {
+        padding: 5px 15px;
+        background-color: rgb(34, 0, 255);
+        border-radius: 10px;
+    }
+    .online-shopping{
+       flex-wrap: wrap;
+    }
+    .online-shopping img{
+        height: 40px;
+        width: 100px;
+        margin-bottom: 60px;
+    }
+    .product-container{
+        padding: 0%;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .card {
+        width: 350px;
+        box-shadow: 2px 2px 20px rgba(37, 8, 8, 0.427);
+    }
+    .card-img img{
+        width: 100%;
+    }
+    .product-name{
+        font-size: 2.5rem;
+    }
+    .card > p{
+        font-size: 1.5rem;
+    }
+    .featured-disc{
+       text-align: center;
+    }
+}
